@@ -1,5 +1,6 @@
-// IL CLIENT 1
-// Ipotesi: server port (fisso) = 11111
+// IL CLIENT 2
+// Invia un messaggio al server
+// e legge il messaggio che viene dal server
 
 import java.io.*;
 import java.net.*;
@@ -24,9 +25,11 @@ public class Client1
 		 System.out.println("Socket creata: " + s);
 		 
 		 try
-		 {
+		 {	//invia messaggio al server
 			out.println("Ciao come stai");
 			String line=is.readLine();
+
+			//riceve dal server
 			System.out.println("Ricevuto: " + line);
 	
 		

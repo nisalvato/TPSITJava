@@ -1,8 +1,7 @@
 // IL SERVER 1
 //Questo server si mette in ascolto sul ServerSocket 11111
 //Quando arriva la conenssione su questa porta poi crea un Socket solo per quel client
-//Il server invia un numero sempre crescente per poi chiduersi quando questo numero arriva a dieci
-//Attenzione NON E' multicast e  accontenta solo un client alla volta 
+//Il server invia un numero al client e si chiude
 
 import java.io.*;
 import java.net.*;
@@ -41,8 +40,6 @@ class Server1
 				//crea uno stream di output con il quale scriverà verso il client
 				PrintWriter os = new PrintWriter(cs.getOutputStream(), true);
 				os.println("Nuovo numero: " + numero);//scrive il numero al client
-				
-				numero++; //incrementa il numero di client accontentati
 				os.close();//chiude lo stream di output
 				cs.close();//chiude il socket col client
 				serverSock.close();//chiude la porta 11111 in ascolto

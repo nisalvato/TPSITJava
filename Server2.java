@@ -1,7 +1,11 @@
-// IL SERVER 1
+/* 
+Il server 2 
+stampa il messaggio ricevuto dal client
+einvia un messaggio al client 
+*/
 import java.io.*;
 import java.net.*;
-class Server1
+class Server2
 {
 	public static void main(String args[])
 	{
@@ -35,9 +39,11 @@ class Server1
 			{
 				BufferedReader is = null;is = new BufferedReader(new InputStreamReader(cs.getInputStream()));
 				String line=is.readLine();
+				//Stampa il messaggio ricevuto dal client
 				System.out.println("Ricevuto: " + line);
 		
 				PrintWriter os = new PrintWriter(cs.getOutputStream(), true);
+				//Invia un messaggio al client
 				os.println("Stop");
 				os.close();
 				cs.close();
