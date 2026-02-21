@@ -1,8 +1,8 @@
 // IL SERVER 1
 //Questo server si mette in ascolto sul ServerSocket 11111
-//Quando arriva la conenssione su questa porta poi crea un Socket solo per quel client
-//Il server invia un numero sempre crescente per poi chiduersi quando questo numero arriva a dieci
-//Attenzione NON E' multicast e  accontenta solo un client alla volta fino a un massimo di dieci
+//Quando arriva la connessione su questa porta poi crea un Socket solo per quel client
+//Il server invia un numero sempre crescente per poi chiduersi quando questo numero arriva a cinque
+//Attenzione NON E' multicast e  accontenta solo un client alla volta fino a un massimo di cinque
 
 import java.io.*;
 import java.net.*;

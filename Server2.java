@@ -1,7 +1,5 @@
 /* 
-Il server 2 
-stampa il messaggio ricevuto dal client
-einvia un messaggio al client 
+Il Server 2 invia la parola STOP al client e poi si chiude
 */
 import java.io.*;
 import java.net.*;

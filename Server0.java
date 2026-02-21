@@ -1,4 +1,4 @@
-// IL SERVER 1
+// IL SERVER 0
 //Questo server si mette in ascolto sul ServerSocket 11111
 //Quando arriva la conenssione su questa porta poi crea un Socket solo per quel client
 //Il server invia un numero al client e si chiude
